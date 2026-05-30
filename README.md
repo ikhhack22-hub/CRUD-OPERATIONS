@@ -5,7 +5,6 @@ RESTful API built with Node.js, Express, MongoDB.
 ## 🔗 Live Demo
 - 🌐 Base URL: `https://crud-operations-2y40.onrender.com` 
 - 📚 Swagger Docs: `/api-docs`
-- 📬 Postman: [رابط المجموعة]
 
 ## 🚀 Quick Start
 1. `git clone <repo>`
