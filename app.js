@@ -3,13 +3,12 @@ const swaggerUi = require("swagger-ui-express");
 const swaggerSpec = require("./swagger/swagger");
 const mongoose = require('mongoose');
 const dotenv = require('dotenv').config({ path: "config.env" });
-const cors = require('cors'); // 👈 1. استيراد المكتبة
+const cors = require('cors'); 
 
 const app = express();
 
 app.use(express.json());
 
-// 👇 2. تفعيل CORS (هذا هو السطر الذي يحل مشكلة "Failed to fetch")
 app.use(cors({
   origin: '*', 
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
@@ -28,7 +27,6 @@ mongoose.connect(process.env.DB_URI)
 
 app.use("/people", require("./routes/peopleRoutes"));
 
-// 👇 Global Error Handler (يجب أن يكون في النهاية)
 app.use((err, req, res, next) => {
   if (err.name === 'CastError') {
     return res.status(400).json({
