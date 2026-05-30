@@ -3,14 +3,14 @@
 RESTful API built with Node.js, Express, MongoDB.
 
 ## 🔗 Live Demo
-- 🌐 Base URL: `https://your-app.onrender.com/api` *(سيُضاف عند النشر)*
+- 🌐 Base URL: `https://crud-operations-2y40.onrender.com` 
 - 📚 Swagger Docs: `/api-docs`
 - 📬 Postman: [رابط المجموعة]
 
 ## 🚀 Quick Start
 1. `git clone <repo>`
 2. `npm install`
-3. `cp .env.example config.env` (املأ القيم)
+3. `cp .env.example config.env` 
 4. `npm run dev`
 
 ## 🔐 Environment Variables
